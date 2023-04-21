@@ -75,8 +75,19 @@
   @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
-.black_btn {
+/* .black_btn {
   @apply rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black;
+}
+.yellow_btn {
+  @apply rounded-full border border-yellow-200 bg-yellow-400 py-1.5 px-5 text-sm text-white transition-all hover:bg-black hover:text-white;
+} */
+.orange_btn {
+  @apply rounded-full border-2 border-solid border-orange-400 bg-gradient-to-r from-orange-400 to-yellow-400 py-1.5 px-5 text-sm text-gray-900 transition-all hover:bg-black hover:text-white;
+}
+
+.pink_btn {
+  @apply rounded-full border-2 border-solid border-pink-300 bg-gradient-to-r from-pink-500 to-rose-500
+  py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black;
 }
 
 .head_text {
@@ -86,6 +97,35 @@
 .orange_gradient {
   @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
 }
+.pink_gradient {
+  @apply bg-gradient-to-br from-pink-500 to-rose-500 bg-clip-text text-transparent;
+}
+/* .blue_gradient {
+  @apply bg-gradient-to-br from-pink-500 to-rose-500 bg-clip-text text-transparent;
+} */
+
+.blue_gradient {
+background-color: #eec0c6;
+background-image: linear-gradient(315deg, #eec0c6 22%, #7ee8fa 94%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.purple_gradient {
+background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 24px;
+
+  @apply mt-5 text-lg text-gray-600 sm:text-xl text-center max-w-2xl;
+
+}
+
+
+/* .blue_gradient {
+  @apply font-black bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+} */
+
 
 .desc {
   @apply mt-5 text-lg text-gray-600 sm:text-xl text-center max-w-2xl;
@@ -107,9 +147,6 @@
   @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
 }
 
-.blue_gradient {
-  @apply font-black bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
-}
 
 .summary_box {
   @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-4;
